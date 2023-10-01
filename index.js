@@ -17,10 +17,7 @@ const passportJWT = require('./config/passport-jwt-strategy');
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 const MongoStore = require('connect-mongo');
-// const sessionStore = new MongoStore({ mongooseConnection: mongoose.connection });
-
-
-// const sassMiddleware = require('node-sass-middleware');
+const sassMiddleware = require('node-sass-middleware');
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
 
@@ -31,16 +28,15 @@ chatServer.listen(5000);
 console.log('chat server is listening on port 5000');
 const path = require('path');
 
-// if (env.name == 'development'){
-//     // app.use(sassMiddleware({
-//     //     src: path.join(__dirname, env.asset_path, 'scss'),
-//     //     dest: path.join(__dirname, env.asset_path, 'css'),
-//     //     debug: true,
-//     //     outputStyle: 'extended',
-//     //     prefix: '/css'
-//     // }));
-//     app.use('css')
-// }
+if (env.name == 'development'){
+    app.use(sassMiddleware({
+        src: path.join(__dirname, env.asset_path, 'scss'),
+        dest: path.join(__dirname, env.asset_path, 'css'),
+        debug: true,
+        outputStyle: 'extended',
+        prefix: '/css'
+    }));
+}
 
 app.use(express.urlencoded());
 
