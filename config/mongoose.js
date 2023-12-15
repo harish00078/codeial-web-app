@@ -2,8 +2,10 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 
 const env = require('./environment');
+const { FALSE } = require('node-sass');
 // mongoose.connect(`mongodb://127.0.0.1:27017/${env.db}`);
 mongoose.connect('mongodb+srv://harish:harish123@cluster0.0qpeyqk.mongodb.net/codeial_development');
+
 
 const db = mongoose.connection;
 
