@@ -1,7 +1,0 @@
-# Node-version of the application:which we use in this application:
-- please use the (nvm) to install this particular version of the (Node):
-=> 14.16.1
-
-=> If you are using node.js version 14.16.1:then we need to use the (4.14.1) version of the (node-sass-middleware):
-=> command to install that version:
-- npm install --save-dev node-sass@4.14.1
