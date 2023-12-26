@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', true);
 
-const env = require('./environment');
-// mongoose.connect(`mongodb://127.0.0.1:27017/${env.db}`);
-mongoose.connect('mongodb+srv://harish:harish123@cluster0.0qpeyqk.mongodb.net/codeial_development');
-
+// mongoose.connect('mongodb://localhost/codeial_development');
+mongoose.connect('mongodb+srv://harish:harish123@cluster0.0qpeyqk.mongodb.net/codeial_development',{
+     useNewUrlParser: true ,useUnifiedTopology:true
+});
 
 const db = mongoose.connection;
 
