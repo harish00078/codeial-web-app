@@ -1,11 +1,23 @@
 #layout-footer {
   color: white;
-  background: grey;
+  background: black;
   padding: 5px 10px;
   display: flex;
-  justify-content: flex-start; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
   #layout-footer a {
     color: white;
     text-decoration: none; }
   #layout-footer .footer-nav ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
+  #layout-footer .footer-nav li {
+    margin-right: 10px; }
+  @media screen and (max-width: 600px) {
+    #layout-footer {
+      justify-content: center;
+      text-align: center; }
+      #layout-footer .footer-nav {
+        margin-top: 10px; }
+      #layout-footer .footer-nav li {
+        margin: 0 5px; } }

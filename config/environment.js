@@ -1,0 +1,36 @@
+// here we setup our environments:
+// 1. development environment:
+// here we create the development-object:
+// In which we will add our all the data related to the development environment:
+// means that the current things.which we are using to run our application:
+const development = {
+  name: "development",
+  asset_path: "./assets",
+  session_cookie_key: "blahsomething",
+  db: "codeial_development",
+  smtp: {
+    service: "gmail",
+    host: "stmp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: "hk313665@gmail.com",
+      pass: "macgnpblfzjssxnw",
+    },
+  },
+  google_client_id:
+    "289203943405-pbn6uhs3a6d7ab3f0bsq6ftm8k77vomd.apps.googleusercontent.com",
+  google_client_secret: "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",
+  google_call_back_url: "http://localhost:8000/users/auth/google/callback",
+  jwt_secret:'codeial',
+};
+
+// 2. production environment:
+// same as above, but for the production environment.
+// here we setup our environments. acc to the production verison of our application:
+const production = {
+  name: "production",
+};
+
+// here we are exporting our the environments from this file:
+module.exports = development;

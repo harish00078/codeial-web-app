@@ -1,6 +1,19 @@
-body {
-  margin: 0;
-  /* text-align: center; */ }
-  body #layout-main {
-    height: 100%;
-    overflow: auto; }
+#layout-main {
+  height: 100%;
+  overflow: auto; }
+  @media screen and (max-width: 600px) {
+    #layout-main {
+      /* Add styles for screens with a width of 600 pixels or less */
+      /* Adjust #layout-main styles for smaller screens */
+      font-size: 14px; }
+      #layout-main body {
+        /* Adjust body styles for smaller screens */
+        background-color: #22c4fa; } }
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    #layout-main {
+      /* Add styles for screens with a width between 601 and 1200 pixels */
+      /* Adjust #layout-main styles for medium-sized screens */
+      font-size: 16px; }
+      #layout-main body {
+        /* Adjust body styles for medium-sized screens */
+        background-color: #90e3ee; } }

@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 #home-container {
   display: flex; }
   #home-container #feed-posts {
@@ -6,5 +9,12 @@
   #home-container #user-friends {
     width: 30%;
     padding: 10px;
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #06595f;
     height: 100%; }
+  @media screen and (max-width: 600px) {
+    #home-container {
+      /* Adjust styles for screens with a width of 600 pixels or less */
+      flex-direction: column; }
+      #home-container #feed-posts, #home-container #user-friends {
+        width: 100%;
+        border-left: none; } }
