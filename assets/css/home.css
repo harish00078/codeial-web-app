@@ -6,11 +6,29 @@ body {
   #home-container #feed-posts {
     width: 70%;
     padding: 10px; }
+    #home-container #feed-posts .box {
+      width: 100%;
+      height: 200px;
+      background-color: #3498db;
+      transform-style: preserve-3d;
+      transform: rotateX(45deg) rotateY(45deg);
+      transition: transform 0.5s ease; }
+      #home-container #feed-posts .box:hover {
+        transform: rotateX(0) rotateY(0); }
   #home-container #user-friends {
     width: 30%;
     padding: 10px;
     border-left: 1px solid #06595f;
     height: 100%; }
+    #home-container #user-friends .box {
+      width: 100%;
+      height: 100%;
+      background-color: #e74c3c;
+      transform-style: preserve-3d;
+      transform: rotateX(45deg) rotateY(45deg);
+      transition: transform 0.5s ease; }
+      #home-container #user-friends .box:hover {
+        transform: rotateX(0) rotateY(0); }
   @media screen and (max-width: 600px) {
     #home-container {
       /* Adjust styles for screens with a width of 600 pixels or less */

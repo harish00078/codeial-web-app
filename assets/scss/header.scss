@@ -38,54 +38,73 @@
 
 #layout-header {
     nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        background: #2196f3;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      background: #2196f3;
+      color: white;
+      box-shadow: 1px 1px 1px 1px lightgrey;
+  
+      .mini-logo {
+        p {
+          margin: 5px;
+          font-size: 1.4rem;
+          font-weight: bold;
+  
+          // 3D Design for mini-logo
+          transform-style: preserve-3d;
+          transform: rotateY(45deg);
+          transition: transform 0.5s ease;
+  
+          &:hover {
+            transform: rotateY(0);
+          }
+        }
+      }
+  
+      .auth-links {
+        ul {
+          margin: 5% 5px;
+          display: flex;
+          list-style: none;
+  
+          li {
+            margin-right: 10px;
+  
+            // 3D Design for auth-links
+            transform-style: preserve-3d;
+            transform: rotateY(45deg);
+            transition: transform 0.5s ease;
+  
+            &:hover {
+              transform: rotateY(0);
+            }
+          }
+        }
+      }
+  
+      a {
         color: white;
-        box-shadow: 1px 1px 1px 1px lightgrey;
-
-        .mini-logo {
-            p {
-                margin: 5px;
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-        }
-
-        .auth-links {
-            ul {
-                margin: 5% 5px;
-                display: flex;
-                list-style: none;
-
-                li {
-                    margin-right: 10px;
-                }
-            }
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
+        text-decoration: none;
+      }
     }
-
+  
     @media screen and (max-width: 600px) {
-        nav {
+      nav {
+        flex-direction: column;
+  
+        .auth-links {
+          ul {
+            margin: 0;
+            padding: 5px;
             flex-direction: column;
-
-            .auth-links {
-                ul {
-                    margin: 0;
-                    padding: 5px;
-                    flex-direction: column;
-
-                    li {
-                        margin: 5px 0;
-                    }
-                }
+  
+            li {
+              margin: 5px 0;
             }
+          }
         }
+      }
     }
-}
+  }
+  
