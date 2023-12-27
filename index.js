@@ -1,6 +1,6 @@
 const express = require("express");
 // here we are importing our environment file:
-const env = require("./config/environment");
+const env = require("./config/environment").default;
 const cookieParser = require("cookie-parser");
 const app = express();
 const port = 8000;

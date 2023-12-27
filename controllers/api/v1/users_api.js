@@ -2,7 +2,7 @@
 const User = require('../../../models/user');
 const jwt = require('jsonwebtoken');
 // here we are importing the environment file:
-const env = require('../../../config/environment');
+const env = require('../../../config/environment').default;
 
 
 module.exports.createSession = async function(req, res){
