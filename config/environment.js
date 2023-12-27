@@ -1,4 +1,21 @@
 // here we setup our environments:
+// here we import (fs):
+const fs = require('fs');
+// here we are import the rotating-file-stream library:
+const rfs = require('rotating-file-stream');
+// here we are importing the (path) library:
+const path = require('path');
+
+const logDirectory = path.join(__dirname,'../production_logs');
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+
+const accessLogStream = rfs.createStream('access.log',{
+  interval:'1d',
+  path:logDirectory
+});
+
+
+
 // 1. development environment:
 // here we create the development-object:
 // In which we will add our all the data related to the development environment:
@@ -23,6 +40,10 @@ const development = {
   google_client_secret: "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",
   google_call_back_url: "http://localhost:8000/users/auth/google/callback",
   jwt_secret:'codeial',
+  morgan:{
+    mode:'dev',
+    options:{stream:accessLogStream}
+  }
 };
 
 // 2. production environment:
@@ -47,9 +68,15 @@ const production = {
   google_client_secret: process.env.CODEIAL_GOOGLE_CLIENT_SECRET,
   google_call_back_url: process.env.CODEIAL_GOOGLE_CALLBACK_URL,
   jwt_secret: process.env.CODEIAL_JWT_SECRET,
+  morgan:{
+    mode:'combined',
+    options:{stream:accessLogStream}
+  }
 };
 
 // we want to export the particular environment.acc to the mode on which we are running our application:
+// here we are doing that.if the environment is (undefined) then we need to use the (development) mode:
+// if its (defined). then we need to use the (defined) environment:
 module.exports = eval(process.env.NODE_ENV) == undefined ? development : eval(process.env.NODE_ENV);
 // here we are exporting our the environments from this file:
 // module.exports = development;

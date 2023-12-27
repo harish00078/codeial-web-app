@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const path = require("path");
 //here we are importing the environmentp file:
-const env = require('./environment').default;
+const env = require('./environment');
 
 let transporter = nodemailer.createTransport(env.smtp);
 

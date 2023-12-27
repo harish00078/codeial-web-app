@@ -1,0 +1,6 @@
+[0mGET / [36m304[0m 1564.959 ms - -[0m
+::1 - - [27/Dec/2023:06:27:06 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [27/Dec/2023:06:27:09 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [27/Dec/2023:06:27:11 +0000] "GET / HTTP/1.1" 200 5669 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [27/Dec/2023:06:27:16 +0000] "GET /users/profile/658bb636b7bf890a9881351e HTTP/1.1" 200 2355 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [27/Dec/2023:06:27:23 +0000] "GET / HTTP/1.1" 200 5378 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
