@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // here we import the env-file:
-const env = require('./environment');
+const env = require('./environment').default;
 // mongoose.connect('mongodb://localhost/codeial_development');
 mongoose.connect(
   `mongodb+srv://harish:harish123@cluster0.0qpeyqk.mongodb.net/${env.db}`,
