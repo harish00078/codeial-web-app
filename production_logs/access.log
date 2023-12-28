@@ -4,3 +4,39 @@
 ::1 - - [27/Dec/2023:06:27:11 +0000] "GET / HTTP/1.1" 200 5669 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [27/Dec/2023:06:27:16 +0000] "GET /users/profile/658bb636b7bf890a9881351e HTTP/1.1" 200 2355 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [27/Dec/2023:06:27:23 +0000] "GET / HTTP/1.1" 200 5378 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 5692.263 ms - 3943[0m
+[0mGET /favicon.ico [33m404[0m 372.787 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 299.945 ms - 2098[0m
+[0mGET /users/auth/google [36m302[0m 747.697 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXl09-jNNknYzp6tB5zhFszh5kayDwVRSafx6k0PyXQMPpV_wdE_eFb63cuCFKEDDg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 2080.680 ms - 46[0m
+[0mGET / [36m304[0m 1385.008 ms - -[0m
+[0mGET /users/sign-in [36m302[0m 643.276 ms - 72[0m
+[0mGET /users/profile [33m404[0m 656.801 ms - 152[0m
+[0mGET /users/sign-in [36m302[0m 602.387 ms - 72[0m
+[0mGET /users/profile [33m404[0m 586.157 ms - 152[0m
+[0mGET /users/profile [33m404[0m 681.878 ms - 152[0m
+[0mGET /users/sign-in [36m302[0m 895.327 ms - 72[0m
+[0mGET /users/profile [33m404[0m 916.877 ms - 152[0m
+[0mGET / [32m200[0m 1634.530 ms - 5517[0m
+[0mGET /users/sign-out [36m302[0m 644.396 ms - 46[0m
+[0mGET / [36m304[0m 1536.233 ms - -[0m
+[0mGET /users/sign-out [36m302[0m 314.972 ms - 46[0m
+[0mGET / [32m200[0m 1273.133 ms - 4232[0m
+[0mGET /users/sign-in [32m200[0m 427.231 ms - 2098[0m
+[0mPOST /users/create-session [36m302[0m 768.079 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 281.954 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 601.246 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 304.498 ms - 2390[0m
+[0mGET /users/auth/google [36m302[0m 763.753 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXkxyKkWazP7sHjCZV9BujnokjeTo_eY_Gonlqy0-Z2TO39-rZAP7boAynLPLuiNLQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 1493.906 ms - 46[0m
+[0mGET / [32m200[0m 1348.532 ms - 3943[0m
+[0mGET /users/sign-in [36m302[0m 629.969 ms - 72[0m
+[0mGET /users/profile [33m404[0m 605.006 ms - 152[0m
+[0mGET /users/sign-in [36m302[0m 642.209 ms - 72[0m
+[0mGET /users/profile [33m404[0m 610.767 ms - 152[0m
+[0mGET /users/sign-up [36m302[0m 665.548 ms - 72[0m
+[0mGET /users/profile [33m404[0m 669.815 ms - 152[0m
+[0mGET / [32m200[0m 1386.728 ms - 5517[0m
+[0mGET /posts/destroy/658a7f33d5998c62e0bf8006 [32m200[0m 2249.812 ms - 72[0m
+[0mPOST /posts/create [32m200[0m 1124.009 ms - 278[0m
+[0mPOST /comments/create [32m200[0m 1647.147 ms - 342[0m
