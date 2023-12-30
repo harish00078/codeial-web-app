@@ -1,7 +1,11 @@
 const gulp = require('gulp');
+// import gulp from ('gulp');
 const sass = require('gulp-sass');
+// import sass from ('gulp-sass');
 const cssnano = require('gulp-cssnano');
+// import cssnano from ('gulp-cssnano');
 const rev = require('gulp-rev');
+// import rev from ('gulp-rev');
 
 gulp.task('css',function(){
     console.log('minifying css....');

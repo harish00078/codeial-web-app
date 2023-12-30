@@ -117,3 +117,6 @@
 ::1 - - [30/Dec/2023:07:11:19 +0000] "GET /js/toggle_likes.js HTTP/1.1" 404 157 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [30/Dec/2023:07:11:19 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 [0mGET / [32m200[0m 1415.332 ms - 4512[0m
+[0mGET / [36m304[0m 4043.657 ms - -[0m
+[0mGET / [36m304[0m 2804.243 ms - -[0m
+[0mGET / [36m304[0m 2455.039 ms - -[0m
