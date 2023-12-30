@@ -120,3 +120,13 @@
 [0mGET / [36m304[0m 4043.657 ms - -[0m
 [0mGET / [36m304[0m 2804.243 ms - -[0m
 [0mGET / [36m304[0m 2455.039 ms - -[0m
+::1 - - [30/Dec/2023:09:55:47 +0000] "GET / HTTP/1.1" 200 3803 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:47 +0000] "GET /css/layout.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:47 +0000] "GET /css/chat_box.css HTTP/1.1" 404 155 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:47 +0000] "GET /css/header.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /css/footer.css HTTP/1.1" 404 153 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /css/home.css HTTP/1.1" 404 151 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /js/home_post_comments.js HTTP/1.1" 404 163 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /js/home_posts.js HTTP/1.1" 404 155 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /js/toggle_likes.js HTTP/1.1" 404 157 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [30/Dec/2023:09:55:48 +0000] "GET /js/chat_engine.js HTTP/1.1" 404 156 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
