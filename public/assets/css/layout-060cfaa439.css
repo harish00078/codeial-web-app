@@ -1,0 +1,27 @@
+#layout-main {
+  height: 100%;
+  overflow: auto;
+  background-color: #81cff1; }
+  @media screen and (max-width: 600px) {
+    #layout-main {
+      /* Styles for screens with a width of 600 pixels or less */
+      /* Adjust #layout-main styles for smaller screens */
+      font-size: 14px; }
+      #layout-main body {
+        background-color: #22c4fa; } }
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    #layout-main {
+      /* Styles for screens with a width between 601 and 1200 pixels */
+      /* Adjust #layout-main styles for medium-sized screens */
+      font-size: 16px; }
+      #layout-main body {
+        background-color: #90e3ee; } }
+  #layout-main .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(45deg);
+    transition: transform 0.5s ease; }
+    #layout-main .box:hover {
+      transform: rotateX(0) rotateY(0); }
