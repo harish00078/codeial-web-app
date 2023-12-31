@@ -760,3 +760,77 @@
 ::1 - - [31/Dec/2023:08:36:04 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [31/Dec/2023:08:36:05 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [31/Dec/2023:08:36:08 +0000] "GET / HTTP/1.1" 200 8301 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-out [36m302[0m 278.041 ms - 46[0m
+[0mGET / [32m200[0m 1600.698 ms - 4847[0m
+[0mGET /users/sign-in [32m200[0m 379.977 ms - 2150[0m
+[0mGET /users/css/layout.css [33m404[0m 264.368 ms - 159[0m
+[0mGET /users/css/header.css [33m404[0m 271.036 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 636.735 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 268.641 ms - 159[0m
+[0mGET /users/sign-in [32m200[0m 291.784 ms - 2151[0m
+[0mGET /users/css/header.css [33m404[0m 258.115 ms - 159[0m
+[0mGET /users/css/footer.css [33m404[0m 299.291 ms - 159[0m
+[0mGET /users/sign-in [32m200[0m 288.288 ms - 2153[0m
+[0mGET / [32m200[0m 1115.377 ms - 4563[0m
+[0mGET /users/sign-in [36m304[0m 277.278 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 538.143 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 272.429 ms - 2445[0m
+[0mGET /users/auth/google [36m302[0m 332.590 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXnoMFhwbmI_9EPrPRTg_6fblYzJ8ShSDsAEJp0WCbdh2DQryBFK3G0GS_xLaW6M7g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1333.233 ms - 46[0m
+[0mGET / [36m304[0m 1090.937 ms - -[0m
+[0mGET / [32m200[0m 1412.316 ms - 6590[0m
+[0mPOST /comments/create [32m200[0m 1480.800 ms - 342[0m
+[0mGET /comments/destroy/659128ca1937da3004ea87e0 [32m200[0m 1166.836 ms - 75[0m
+[0mPOST /likes/toggle/?id=658d0fb6eaa99101d0a4fe59&type=Comment [32m200[0m 1456.347 ms - 58[0m
+[0mGET /users/profile [33m404[0m 557.077 ms - 152[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 913.086 ms - 2450[0m
+[0mGET / [32m200[0m 1651.240 ms - 6299[0m
+::1 - - [31/Dec/2023:08:41:04 +0000] "GET / HTTP/1.1" 200 5363 "http://localhost:8000/users/profile/64bfe90428141f8d7a681075" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:04 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:10 +0000] "GET /users/sign-in HTTP/1.1" 200 2138 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:10 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:29 +0000] "GET / HTTP/1.1" 200 5309 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:35 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:39 +0000] "GET /users/sign-in HTTP/1.1" 200 2108 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:42 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:47 +0000] "GET /users/auth/google/callback?code=4%2F0AfJohXn2uJxtKY8Hme7VUBrE_PZ6Epp-CAAJKIOOxHYJGXb72yK9GIt5BHLmtgayuSJ0mA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:48 +0000] "GET / HTTP/1.1" 200 8167 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:52 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:41:53 +0000] "GET / HTTP/1.1" 200 5598 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:25 +0000] "GET / HTTP/1.1" 200 5434 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:28 +0000] "GET /users/sign-in HTTP/1.1" 200 2183 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:28 +0000] "GET /users/css/layout-060cfaa439.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:28 +0000] "GET /users/css/header-85e71c81a0.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:28 +0000] "GET /users/css/footer-81e80d9cd8.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:40 +0000] "GET /users/sign-in HTTP/1.1" 200 2186 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:44 +0000] "GET / HTTP/1.1" 200 5443 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:54 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:42:58 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:00 +0000] "GET /users/profile/658bb636b7bf890a9881351e HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:00 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:03 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 1002.627 ms - 2153[0m
+[0mGET / [32m200[0m 1578.336 ms - 4567[0m
+[0mGET /users/sign-in [36m304[0m 373.679 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 425.120 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXlpm_Nte9gkannYyiPvJoK7OpboVWQw1iw9NmD9tnQMj8BIv65-LLrnSS25ekaTOQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1334.489 ms - 46[0m
+[0mGET / [36m304[0m 1620.809 ms - -[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 1072.729 ms - 2741[0m
+[0mGET / [32m200[0m 1835.811 ms - 6303[0m
+::1 - - [31/Dec/2023:08:43:50 +0000] "GET / HTTP/1.1" 200 5443 "http://localhost:8000/users/profile/64bfe90428141f8d7a681075" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:52 +0000] "GET /users/sign-in HTTP/1.1" 200 2186 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:53 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:58 +0000] "GET /users/auth/google/callback?code=4%2F0AfJohXk8WWvwKSIH5enq_nvTaRuHZszqKYGoBQ2DoTfjKxMXi7jWagoQ2JSpVkbJ5MCwqQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:43:59 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:44:01 +0000] "GET /users/profile/658bb636b7bf890a9881351e HTTP/1.1" 200 2788 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:44:05 +0000] "GET / HTTP/1.1" 200 8010 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:44:07 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [31/Dec/2023:08:44:08 +0000] "GET / HTTP/1.1" 200 5732 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 1503.359 ms - 2153[0m
+[0mGET /users/auth/google [36m302[0m 291.512 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXngziHHZedroSe2oOctL3Sw6oU0np2jNMxDdZJ9jUVZUHID_cUg4V9SJwmBG6DPbA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1359.915 ms - 46[0m
+[0mGET / [32m200[0m 1668.011 ms - 6594[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 818.276 ms - 2450[0m
+[0mGET /users/sign-out [36m302[0m 558.883 ms - 46[0m
+[0mGET / [32m200[0m 1726.788 ms - 6303[0m
+[0mGET / [32m200[0m 1439.559 ms - 4856[0m
