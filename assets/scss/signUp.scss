@@ -1,69 +1,176 @@
+// body {
+//   margin: 0;
+//   background-image: linear-gradient(rgb(0, 87, 141), rgb(10, 134, 134));
+// }
 
-  
-  body {
-    margin: 0;
-    background-image: linear-gradient(rgb(0, 87, 141), rgb(10, 134, 134));
+// .main-div-signup {
+//   display: flex;
+//   width: 30%;
+//   margin: auto;
+//   margin-top: 15px;
+//   height: auto;
+//   text-align: left;
+//   padding: 0% 2% 2% 2%;
+//   font-size: 18px;
+
+//   h1 {
+//     padding-right: 5px;
+//     color: white;
+//   }
+
+//   input {
+//     width: 100%;
+//     height: 20px;
+//     margin: 1px 0px 10px 0px;
+//     padding: 5px; // Added padding for better input styling
+//     box-sizing: border-box; // Box sizing for better sizing calculation
+//   }
+
+//   button {
+//     background-color: black;
+//     width: 100%;
+//     color: white;
+//     height: 30px;
+
+//     &:hover {
+//       color: cyan;
+//     }
+//   }
+// }
+
+//   .google {
+//     margin-top: 20px;
+
+//     span {
+
+//       margin-bottom: 10px;
+//       display: block;
+//     }
+
+//     a {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       display: inline;
+
+//       img {
+//         height: 40px;
+//         width: 40px;
+//         margin-right: 10px;
+//         border: 2px solid #3498db;
+//       }
+//     }
+//   }
+
+// Import the CSS file
+// @import "<%= assetPath('css/signUp.css')%>";
+
+// Common style for anchor tags
+// $link-styles: {
+//   color: #333;
+//   font-size: 18px;
+//   border: 2px solid #3498db;
+//   text-decoration: none;
+//   padding: 5px 10px;
+//   display: inline-block;
+
+//   &:hover {
+//     background-color: #3498db;
+//     color: white;
+//   }
+// };
+
+body {
+  margin: 0;
+}
+
+.main-div-signup {
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
   }
-  
-  .main-div-signup {
-    display: flex;
-    width: 30%;
-    margin: auto;
-    margin-top: 15px;
-    height: auto;
-    text-align: left;
-    padding: 0% 2% 2% 2%;
-    font-size: 18px;
-  
-    h1 {
-      padding-right: 5px;
-      color: white;
+
+  hr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  form {
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
     }
-  
+
     input {
       width: 100%;
-      height: 20px;
-      margin: 1px 0px 10px 0px;
-      padding: 5px; // Added padding for better input styling
-      box-sizing: border-box; // Box sizing for better sizing calculation
-    }
-  
-    button {
-      background-color: black;
-      width: 100%;
-      color: white;
       height: 30px;
-  
+      margin-bottom: 15px;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .signUp {
+    margin-top: 15px;
+
+    p {
+      color: #333;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 5px;
+      display: inline;
+    }
+
+    a {
+      border: 2px solid #3498db;
+      color: #333;
       &:hover {
-        color: cyan;
+        background-color: #3498db;
+        color: white;
       }
     }
   }
-  
 
-  
-    .google {
-      margin-top: 20px;
-  
-      span {
-        
-        margin-bottom: 10px;
-        display: block;
-      }
-  
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        display: inline;
-  
-        img {
-          height: 40px;
-          width: 40px;
-          margin-right: 10px;
-          border: 2px solid #3498db;
+  .google {
+    margin-top: 20px;
+
+    span {
+      color: #333;
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        border: 2px solid #3498db;
+        &:hover {
+          border: 2px solid black;
         }
       }
     }
-  
-  
+  }
+}

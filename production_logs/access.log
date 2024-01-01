@@ -1048,3 +1048,92 @@
 ::1 - - [01/Jan/2024:12:08:32 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 [0mGET /users/sign-in [32m200[0m 5024.558 ms - 6171[0m
 [0mGET /users/sign-up [32m200[0m 302.444 ms - 6671[0m
+::1 - - [01/Jan/2024:12:12:14 +0000] "GET /users/sign-up HTTP/1.1" 200 6704 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:14 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:17 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:18 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:21 +0000] "GET /users/sign-in HTTP/1.1" 200 6215 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:22 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:12:22 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:14:19 +0000] "GET /users/sign-up HTTP/1.1" 200 6715 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:14:22 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:14:23 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-up [32m200[0m 270.421 ms - 6671[0m
+[0mGET /users/sign-up [36m304[0m 262.463 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 285.220 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 273.014 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 848.261 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 374.839 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 1848.786 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 269.796 ms - 6171[0m
+[0mGET /users/sign-up [36m304[0m 291.950 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 388.200 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 276.467 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 282.622 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 265.156 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 527.738 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 297.255 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 281.147 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 275.985 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 289.799 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 334.118 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 283.692 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 277.664 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 314.187 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 389.772 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 373.734 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 295.232 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 275.964 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXkucsdLNfwdfrGx1S1hW0MmaWGEoDrsJWcwoEh_f3Y39CVZtHhOHjRdFijkT2qL_w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1409.753 ms - 46[0m
+[0mGET / [32m200[0m 2419.291 ms - 6594[0m
+[0mGET /users/profile [33m404[0m 653.857 ms - 152[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 956.450 ms - 2450[0m
+[0mGET / [32m200[0m 1825.495 ms - 6393[0m
+[0mGET /users/profile/65856b502bf5a764b44bbf8c [31m500[0m 956.255 ms - 2626[0m
+[0mGET / [31m500[0m 1924.479 ms - 2188[0m
+[0mGET / [32m200[0m 1836.474 ms - 6141[0m
+[0mPOST /likes/toggle/?id=658d0fb6eaa99101d0a4fe59&type=Comment [32m200[0m 1783.672 ms - 57[0m
+[0mGET / [32m200[0m 1590.375 ms - 6141[0m
+[0mGET / [36m304[0m 1484.339 ms - -[0m
+[0mGET / [36m304[0m 1507.788 ms - -[0m
+[0mGET / [36m304[0m 1491.260 ms - -[0m
+[0mGET / [36m304[0m 1529.252 ms - -[0m
+[0mGET / [36m304[0m 1530.732 ms - -[0m
+[0mGET / [36m304[0m 1496.248 ms - -[0m
+[0mGET / [36m304[0m 1547.822 ms - -[0m
+[0mGET /posts/destroy/658d0fafeaa99101d0a4fe54 [32m200[0m 1864.263 ms - 72[0m
+[0mPOST /posts/create [32m200[0m 1142.200 ms - 291[0m
+[0mPOST /comments/create [32m200[0m 1451.801 ms - 342[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1471.024 ms - 58[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1474.658 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1502.167 ms - 58[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1374.146 ms - 58[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1385.289 ms - 58[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1656.907 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1522.514 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1383.882 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1457.330 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1698.341 ms - 58[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1486.846 ms - 57[0m
+[0mPOST /likes/toggle/?id=6592b2ed0772c80af42e88e5&type=Post [32m200[0m 1641.150 ms - 58[0m
+::1 - - [01/Jan/2024:12:42:40 +0000] "GET / HTTP/1.1" 200 5189 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:41 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:42 +0000] "GET /users/sign-in HTTP/1.1" 200 6044 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:46 +0000] "GET /users/auth/google HTTP/1.1" 302 0 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:51 +0000] "GET /users/auth/google/callback?code=4%2F0AfJohXk2pu17Iw66l1vdY_tEsrTJYiDkkpRwfdmStd9SrsKpGKBd6tmsID97cS9hpDeGwQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent HTTP/1.1" 302 46 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:53 +0000] "GET / HTTP/1.1" 200 8056 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:53 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:42:55 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:00 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:01 +0000] "GET / HTTP/1.1" 200 5478 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:01 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:01 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:01 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:02 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:07 +0000] "GET /users/sign-up HTTP/1.1" 200 6544 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:43:35 +0000] "GET /users/sign-up HTTP/1.1" 200 6544 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
