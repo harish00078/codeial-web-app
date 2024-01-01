@@ -994,3 +994,57 @@
 ::1 - - [01/Jan/2024:08:12:50 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [01/Jan/2024:08:12:51 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 [0mGET /users/sign-up [32m200[0m 6867.991 ms - 6671[0m
+[0mGET / [36m304[0m 1647.825 ms - -[0m
+[0mGET /favicon.ico [33m404[0m 324.961 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 317.367 ms - 6171[0m
+[0mGET /users/sign-up [36m304[0m 299.822 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 325.945 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 292.079 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 379.277 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 292.236 ms - -[0m
+[0mPOST /users/create [36m302[0m 779.981 ms - 114[0m
+[0mGET /users/sign-up [32m200[0m 436.260 ms - 6978[0m
+[0mGET /users/sign-in [36m304[0m 315.078 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 577.444 ms - 46[0m
+[0mGET / [36m304[0m 1633.571 ms - -[0m
+[0mGET / [32m200[0m 1920.906 ms - 6443[0m
+[0mGET /users/profile/65856b502bf5a764b44bbf8c [32m200[0m 986.986 ms - 2427[0m
+[0mGET /users/sign-out [36m302[0m 721.987 ms - 46[0m
+[0mGET / [32m200[0m 2082.229 ms - 6152[0m
+[0mGET /users/sign-out [36m302[0m 327.335 ms - 46[0m
+[0mGET / [32m200[0m 1682.918 ms - 4856[0m
+[0mGET /users/sign-in [36m304[0m 350.037 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 287.542 ms - 6671[0m
+[0mGET /users/auth/google [36m302[0m 296.715 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXkA2ge_jepQJDkyCN6EB-ihtdZEvv-In9xwIuhYjejmQh3x-1NBuwmzSUTj-iiWSA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1687.164 ms - 46[0m
+[0mGET / [32m200[0m 1562.198 ms - 4567[0m
+[0mGET / [32m200[0m 1816.615 ms - 6594[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [36m304[0m 1108.427 ms - -[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [36m304[0m 1001.527 ms - -[0m
+::1 - - [01/Jan/2024:11:54:27 +0000] "GET /users/profile/64bfe90428141f8d7a681075 HTTP/1.1" 302 72 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:54:28 +0000] "GET /users/sign-in HTTP/1.1" 200 6215 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:54:31 +0000] "GET /users/sign-up HTTP/1.1" 200 6704 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:54:31 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:55:19 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:55:20 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:55:22 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:11:55:22 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-up [32m200[0m 3718.622 ms - 6671[0m
+[0mGET /users/sign-in [32m200[0m 293.689 ms - 6171[0m
+[0mGET /users/sign-up [36m304[0m 402.687 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 342.613 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 314.236 ms - -[0m
+[0mGET / [32m200[0m 1905.627 ms - 4567[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [36m302[0m 356.992 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 270.896 ms - -[0m
+[0mGET / [36m304[0m 2073.713 ms - -[0m
+::1 - - [01/Jan/2024:12:08:15 +0000] "GET / HTTP/1.1" 200 5443 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:19 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:25 +0000] "GET /users/sign-in HTTP/1.1" 200 6199 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:25 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:27 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:27 +0000] "GET /users/sign-up HTTP/1.1" 200 6704 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:32 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:12:08:32 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 5024.558 ms - 6171[0m
+[0mGET /users/sign-up [32m200[0m 302.444 ms - 6671[0m
