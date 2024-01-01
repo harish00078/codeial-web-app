@@ -834,3 +834,163 @@
 [0mGET /users/sign-out [36m302[0m 558.883 ms - 46[0m
 [0mGET / [32m200[0m 1726.788 ms - 6303[0m
 [0mGET / [32m200[0m 1439.559 ms - 4856[0m
+::1 - - [01/Jan/2024:07:00:23 +0000] "GET / HTTP/1.1" 200 5443 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:00:24 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:00:26 +0000] "GET /users/sign-in HTTP/1.1" 200 2922 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:00:26 +0000] "GET /css/signIn.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:02:51 +0000] "GET /users/sign-in HTTP/1.1" 200 2917 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:02:51 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:03:01 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:03:02 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:07:05:31 +0000] "GET /users/sign-in HTTP/1.1" 200 2933 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 1457.720 ms - 2889[0m
+[0mGET /users/sign-up [32m200[0m 474.823 ms - 2309[0m
+[0mGET /users/sign-in [36m304[0m 271.134 ms - -[0m
+[0mGET /users/signup [33m404[0m 318.928 ms - 151[0m
+[0mGET /users/auth/google [36m302[0m 280.808 ms - 0[0m
+[0mGET /users/sign-in [36m304[0m 473.270 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 302.583 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 275.462 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 378.141 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 317.075 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 304.378 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 478.166 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 365.091 ms - -[0m
+::1 - - [01/Jan/2024:07:12:08 +0000] "GET /users/sign-in HTTP/1.1" 200 2933 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 2947.846 ms - 2889[0m
+[0mGET /users/sign-in [36m304[0m 585.722 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 356.315 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 291.764 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 306.814 ms - 2892[0m
+[0mGET /users/sign-in [32m200[0m 302.301 ms - 2946[0m
+[0mGET /users/auth/google [36m302[0m 290.218 ms - 0[0m
+[0mGET /users/sign-in [36m304[0m 306.244 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 291.279 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 293.530 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 388.257 ms - 2950[0m
+[0mGET /users/sign-in [32m200[0m 370.860 ms - 7274[0m
+[0mGET /users/sign-in [36m304[0m 283.371 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 280.117 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 296.895 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 298.711 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 290.781 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 389.859 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 279.929 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 284.355 ms - 0[0m
+[0mGET /users/sign-in [36m304[0m 294.373 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 301.246 ms - 7288[0m
+[0mGET /users/sign-in [32m200[0m 411.265 ms - 7291[0m
+[0mGET /users/sign-in [32m200[0m 300.483 ms - 7290[0m
+[0mGET /users/sign-in [32m200[0m 298.111 ms - 7289[0m
+[0mGET /users/sign-in [32m200[0m 310.836 ms - 7309[0m
+[0mGET /users/sign-in [36m304[0m 338.216 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 403.543 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 406.887 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 420.133 ms - 7311[0m
+[0mGET /users/sign-in [36m304[0m 285.231 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 408.004 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 351.761 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 287.387 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 287.495 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 389.703 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 293.899 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 288.512 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 292.289 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 879.373 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 317.492 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 424.932 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 303.194 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 277.487 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 284.765 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 416.863 ms - 7320[0m
+[0mGET /users/sign-in [32m200[0m 304.749 ms - 7344[0m
+[0mGET /users/sign-in [32m200[0m 338.274 ms - 7311[0m
+[0mGET /users/sign-in [36m304[0m 288.053 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 502.279 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 294.829 ms - 7332[0m
+[0mGET /users/sign-in [32m200[0m 344.953 ms - 7341[0m
+[0mGET /users/sign-in [32m200[0m 307.844 ms - 2965[0m
+[0mGET /users/sign-in [32m200[0m 295.638 ms - 6131[0m
+[0mGET /users/sign-in [32m200[0m 318.521 ms - 6140[0m
+[0mGET /users/sign-in [36m304[0m 283.471 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 335.416 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 293.438 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 301.812 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 631.044 ms - 72[0m
+[0mGET /users/sign-in [32m200[0m 283.301 ms - 6432[0m
+[0mGET /users/sign-in [32m200[0m 282.585 ms - 6140[0m
+[0mGET /users/sign-in [32m200[0m 405.216 ms - 6172[0m
+[0mGET /users/sign-in [32m200[0m 291.051 ms - 6173[0m
+[0mGET /users/sign-in [32m200[0m 504.433 ms - 6201[0m
+[0mGET /users/sign-in [36m304[0m 293.253 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 338.319 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 319.935 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 293.564 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 370.669 ms - 6135[0m
+[0mGET /users/sign-in [36m304[0m 432.917 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 431.555 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 321.467 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 289.629 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 369.808 ms - -[0m
+[0mGET / [32m200[0m 1872.060 ms - 4567[0m
+[0mGET /users/sign-in [36m304[0m 319.164 ms - -[0m
+[0mGET /users/signup [33m404[0m 311.470 ms - 151[0m
+[0mGET /users/signup [33m404[0m 330.294 ms - 151[0m
+[0mGET /users/signup [33m404[0m 428.558 ms - 151[0m
+[0mGET /users/sign-up [36m304[0m 461.430 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 403.221 ms - 6133[0m
+[0mGET /users/create [33m404[0m 293.781 ms - 151[0m
+[0mGET /users/create [33m404[0m 474.578 ms - 151[0m
+[0mGET /users/create [33m404[0m 378.050 ms - 151[0m
+[0mGET /users/sign-in [32m200[0m 298.336 ms - 6171[0m
+[0mGET /users/sign-up [36m304[0m 298.132 ms - -[0m
+[0mGET / [36m304[0m 1590.097 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 299.404 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 493.229 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 311.160 ms - 3537[0m
+[0mGET / [36m304[0m 1981.459 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 296.406 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 324.657 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 352.221 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 309.057 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 287.208 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 296.362 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 1903.416 ms - 3430[0m
+[0mGET /users/signin [33m404[0m 318.707 ms - 151[0m
+[0mGET /users/auth/google [36m302[0m 401.398 ms - 0[0m
+[0mGET /users/signin [33m404[0m 397.776 ms - 151[0m
+[0mGET /users/sign-up [32m200[0m 294.946 ms - 3087[0m
+[0mGET /users/sign-up [36m304[0m 453.847 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 288.289 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 426.930 ms - 3430[0m
+[0mGET /users/sign-up [32m200[0m 304.158 ms - 6678[0m
+[0mGET /users/sign-in [36m304[0m 302.022 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 287.578 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 291.764 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 391.527 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 400.678 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 384.619 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 324.271 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 825.762 ms - 6659[0m
+[0mGET /users/sign-up [36m304[0m 309.995 ms - -[0m
+[0mGET /users/sign-up [32m200[0m 303.594 ms - 6668[0m
+[0mGET /users/sign-up [32m200[0m 380.666 ms - 6671[0m
+[0mGET /users/sign-up [36m304[0m 359.725 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 294.106 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 396.405 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 280.223 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 370.746 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 427.662 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 357.693 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 409.275 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 402.953 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 292.223 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 358.359 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 6116.362 ms - -[0m
+::1 - - [01/Jan/2024:08:12:19 +0000] "GET /users/sign-up HTTP/1.1" 200 6704 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:08:12:19 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:08:12:27 +0000] "GET /users/sign-in HTTP/1.1" 200 6215 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:08:12:47 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:08:12:50 +0000] "GET /users/sign-up HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [01/Jan/2024:08:12:51 +0000] "GET /css/signUp.css HTTP/1.1" 404 153 "http://localhost:8000/users/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-up [32m200[0m 6867.991 ms - 6671[0m
