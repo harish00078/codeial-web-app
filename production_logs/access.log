@@ -1467,3 +1467,44 @@
 ::1 - - [08/Jan/2024:09:57:26 +0000] "GET /users/profile/css/user_profile-bf94b0b59a.css HTTP/1.1" 404 184 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [08/Jan/2024:09:57:26 +0000] "GET /users/profile/css/header-85e71c81a0.css HTTP/1.1" 404 178 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [08/Jan/2024:09:57:29 +0000] "GET / HTTP/1.1" 200 4000 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:19 +0000] "GET / HTTP/1.1" 200 4000 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:24 +0000] "GET /users/profile/658bb636b7bf890a9881351e HTTP/1.1" 200 2422 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:26 +0000] "GET /users/profile/css/layout-060cfaa439.css HTTP/1.1" 404 178 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:26 +0000] "GET /users/profile/css/header-85e71c81a0.css HTTP/1.1" 404 178 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:26 +0000] "GET /users/profile/css/footer-81e80d9cd8.css HTTP/1.1" 404 178 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:26 +0000] "GET /users/profile/css/user_profile-bf94b0b59a.css HTTP/1.1" 404 184 "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:30 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/profile/658bb636b7bf890a9881351e" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:35 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:37 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:38 +0000] "GET /users/profile HTTP/1.1" 404 152 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:40 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:41 +0000] "GET / HTTP/1.1" 200 3246 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:42 +0000] "GET /users/sign-in HTTP/1.1" 200 6395 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:42 +0000] "GET /users/css/layout-060cfaa439.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:42 +0000] "GET /users/css/footer-81e80d9cd8.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:42 +0000] "GET /users/css/header-85e71c81a0.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:23:45 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:25:55 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 284.656 ms - 6121[0m
+[0mGET / [32m200[0m 1701.693 ms - 4666[0m
+::1 - - [08/Jan/2024:10:54:10 +0000] "GET / HTTP/1.1" 200 3246 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:54:14 +0000] "GET /users/sign-in HTTP/1.1" 200 6106 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:54:14 +0000] "GET /users/css/layout-060cfaa439.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:54:14 +0000] "GET /users/css/header-85e71c81a0.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:54:14 +0000] "GET /users/css/footer-81e80d9cd8.css HTTP/1.1" 404 170 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET /users/sign-in [32m200[0m 1491.278 ms - 6121[0m
+[0mPOST /users/create-session [36m302[0m 585.935 ms - 72[0m
+[0mGET /users/sign-in [36m304[0m 286.400 ms - -[0m
+[0mGET /users/sign-in [32m200[0m 319.708 ms - 6413[0m
+[0mGET / [0m-[0m - ms - -[0m
+[0mGET / [32m200[0m 1547.030 ms - 4666[0m
+::1 - - [08/Jan/2024:10:59:23 +0000] "GET / HTTP/1.1" 200 3246 "http://localhost:8000/users/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:24 +0000] "GET /css/layout-060cfaa439.css HTTP/1.1" 404 164 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:24 +0000] "GET /css/footer-81e80d9cd8.css HTTP/1.1" 404 164 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:24 +0000] "GET /css/home-74bc325fc3.css HTTP/1.1" 404 162 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:24 +0000] "GET /css/chat_box-f5c54902da.css HTTP/1.1" 404 166 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:24 +0000] "GET /js/home_post_comments-1dbdcead12.js HTTP/1.1" 404 174 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:25 +0000] "GET /js/home_posts-5b6c172334.js HTTP/1.1" 404 166 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:25 +0000] "GET /css/header-85e71c81a0.css HTTP/1.1" 404 164 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:25 +0000] "GET /js/toggle_likes-a1b81230c0.js HTTP/1.1" 404 168 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+::1 - - [08/Jan/2024:10:59:25 +0000] "GET /js/chat_engine-f4b02c87c7.js HTTP/1.1" 404 167 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
