@@ -52,7 +52,11 @@ if(env.name == 'development'){
 
 
 // url-encode handler:and its connection with application:
+// => IMP = we have to add the ({extended:false}) in the production mode:
 app.use(express.urlencoded({extended: false}));
+// = IMP = we did not have to add anything in the (development) mode:
+// app.use(express.urlencoded());
+
 // cookie-parser handler:and its connection with application:
 app.use(cookieParser());
 
