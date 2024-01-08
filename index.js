@@ -52,7 +52,7 @@ if(env.name == 'development'){
 
 
 // url-encode handler:and its connection with application:
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: false}));
 // cookie-parser handler:and its connection with application:
 app.use(cookieParser());
 
