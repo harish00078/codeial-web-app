@@ -38,8 +38,8 @@ const development = {
   google_client_id:
     "289203943405-pbn6uhs3a6d7ab3f0bsq6ftm8k77vomd.apps.googleusercontent.com",
   google_client_secret: "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",
-  // google_call_back_url: "http://localhost:8000/users/auth/google/callback",
-  google_call_back_url: "http://codeial-app.click/users/auth/google/callback",
+  google_call_back_url: "http://localhost:8000/users/auth/google/callback",
+  // google_call_back_url: "http://codeial-app.click/users/auth/google/callback",
 
   jwt_secret:'codeial',
   morgan:{
