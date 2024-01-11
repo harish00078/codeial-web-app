@@ -1863,3 +1863,8 @@
 ::1 - - [11/Jan/2024:12:30:52 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [11/Jan/2024:12:30:52 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ::1 - - [11/Jan/2024:12:30:53 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+[0mGET / [32m200[0m 1378.770 ms - 4842[0m
+[0mGET /users/sign-in [32m200[0m 351.631 ms - 6162[0m
+[0mGET /users/auth/google [36m302[0m 317.509 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AfJohXk9kXyO9dc-O5f6dQ829wZUuhbjzed4ZYTReJ9ngwmcNw98mc6MQxUfOAMnTRpMjg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1339.698 ms - 46[0m
+[0mGET / [32m200[0m 1764.281 ms - 7408[0m
