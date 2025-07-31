@@ -1,15 +1,16 @@
-/* Modern 3D Sign-In Styles */
+/* Modern 3D Sign In Styles */
 body {
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-primary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   perspective: 1000px;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -38,21 +39,23 @@ body::before {
   z-index: -1;
 }
 
+/* Main Sign In Container */
 .main-div-signin {
   max-width: 450px;
   width: 90%;
   margin: auto;
-  padding: 40px;
+  padding: 40px 35px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: blur(25px);
+  border-radius: var(--border-radius-lg);
+  border: 2px solid var(--glass-border);
   transform-style: preserve-3d;
   transform: translateZ(0) rotateX(5deg);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transition: var(--transition-slow);
+  box-shadow: 0 25px 50px var(--neutral-black-rgba-2),
+    inset 0 1px 0 var(--neutral-white-rgba-3),
+    inset 0 -1px 0 var(--neutral-black-rgba);
   position: relative;
   overflow: hidden;
 }
@@ -67,7 +70,7 @@ body::before {
   background: linear-gradient(
     45deg,
     transparent 30%,
-    rgba(255, 255, 255, 0.1) 50%,
+    var(--neutral-white-rgba) 50%,
     transparent 70%
   );
   transform: translateX(-100%);
@@ -76,137 +79,159 @@ body::before {
 
 .main-div-signin:hover {
   transform: translateZ(30px) rotateX(0deg) scale(1.02);
-  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 35px 70px var(--neutral-black-rgba-3),
+    inset 0 1px 0 var(--neutral-white-rgba-4),
+    inset 0 -1px 0 var(--neutral-black-rgba);
 }
 
 .main-div-signin:hover::before {
   transform: translateX(100%);
 }
 
-.main-div-signin h1 {
-  color: white;
+/* Logo Section */
+.logo-section {
   margin-bottom: 30px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.5);
   transform: translateZ(20px);
-  transition: all 0.3s ease;
+}
+
+.app-logo {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px var(--neutral-black-rgba-3),
+    0 0 20px var(--neutral-white-rgba-5);
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--accent-purple)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-tagline {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+  transform: translateZ(10px);
+}
+
+/* Sign In Header */
+.main-div-signin h1 {
+  color: var(--text-primary);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px var(--neutral-black-rgba-3),
+    0 0 20px var(--neutral-white-rgba-5);
+  transform: translateZ(20px);
+  transition: var(--transition-fast);
 }
 
 .main-div-signin h1:hover {
   transform: translateZ(30px) scale(1.05);
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 3px 3px 6px var(--neutral-black-rgba-4),
+    0 0 30px var(--neutral-white-rgba-8);
 }
 
-.main-div-signin hr {
-  border: none;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.5),
-    transparent
-  );
-  margin-bottom: 30px;
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0 0 30px 0;
+  transform: translateZ(15px);
+}
+
+/* Form Styling */
+.main-div-signin form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform-style: preserve-3d;
+  transform: translateZ(15px);
+  margin-bottom: 25px;
+}
+
+/* Form Groups */
+.form-group {
+  text-align: left;
   transform: translateZ(10px);
 }
 
-.main-div-signin form {
-  transform-style: preserve-3d;
-  transform: translateZ(0);
-}
-
+/* Form Labels */
 .main-div-signin form label {
   display: block;
-  margin-bottom: 8px;
-  color: white;
+  font-size: 0.95rem;
   font-weight: 600;
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  transform: translateZ(15px);
-  transition: all 0.3s ease;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  transform: translateZ(10px);
+  transition: var(--transition-fast);
 }
 
 .main-div-signin form label:hover {
-  transform: translateZ(20px) scale(1.02);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transform: translateZ(15px);
+  color: var(--text-primary);
 }
 
-.main-div-signin form input {
+/* Form Inputs */
+.main-div-signin form input[type="email"],
+.main-div-signin form input[type="password"] {
   width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
-  padding: 0 20px;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
-  color: white;
+  padding: 15px 20px;
+  background: var(--glass-bg-2);
+  border: 2px solid var(--glass-border-2);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
   font-size: 1rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   transform-style: preserve-3d;
   transform: translateZ(10px);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  position: relative;
-  overflow: hidden;
+  transition: var(--transition-medium);
+  box-shadow: 0 8px 25px var(--neutral-black-rgba),
+    inset 0 1px 0 var(--neutral-white-rgba-2);
+  box-sizing: border-box;
 }
 
 .main-div-signin form input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-div-signin form input::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transition: left 0.5s ease;
+  color: var(--text-muted);
 }
 
 .main-div-signin form input:focus {
   outline: none;
-  border-color: rgba(52, 152, 219, 0.8);
-  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--primary-blue);
+  background: var(--neutral-white-rgba-2);
   transform: translateZ(20px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 20px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 15px 35px var(--neutral-black-rgba-2),
+    inset 0 1px 0 var(--neutral-white-rgba-3), 0 0 20px var(--shadow-primary);
 }
 
-.main-div-signin form input:focus::before {
-  left: 100%;
-}
-
-.main-div-signin form button {
-  background: linear-gradient(145deg, #3498db, #2980b9);
-  color: white;
+/* Submit Button */
+.main-div-signin form button.but {
   width: 100%;
-  height: 55px;
+  padding: 16px 30px;
+  background: var(--gradient-blue);
+  color: var(--text-primary);
   border: none;
-  border-radius: 25px;
+  border-radius: var(--border-radius-md);
+  font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
   transform-style: preserve-3d;
   transform: translateZ(15px);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: var(--transition-medium);
+  box-shadow: 0 10px 30px var(--shadow-primary),
+    inset 0 1px 0 var(--neutral-white-rgba-2);
   position: relative;
   overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
 }
 
-.main-div-signin form button::before {
+.main-div-signin form button.but::before {
   content: "";
   position: absolute;
   top: 0;
@@ -216,122 +241,87 @@ body::before {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.2),
+    var(--neutral-white-rgba-2) 50%,
     transparent
   );
   transition: left 0.5s ease;
 }
 
-.main-div-signin form button:hover {
-  background: linear-gradient(145deg, #2980b9, #1f5f8b);
-  transform: translateY(-5px) translateZ(25px) scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+.main-div-signin form button.but:hover {
+  background: var(--gradient-blue);
+  transform: translateY(-3px) translateZ(25px) scale(1.05);
+  box-shadow: 0 20px 40px var(--shadow-primary-dark),
+    inset 0 1px 0 var(--neutral-white-rgba-3);
 }
 
-.main-div-signin form button:hover::before {
+.main-div-signin form button.but:hover::before {
   left: 100%;
 }
 
-.main-div-signin form button:active {
-  transform: translateY(0px) translateZ(15px) scale(1.02);
+.main-div-signin form button.but:active {
+  transform: translateY(-2px) translateZ(20px) scale(1.02);
 }
 
-.main-div-signin .signUp {
-  margin-top: 30px;
-  transform: translateZ(10px);
-}
-
-.main-div-signin .signUp p {
-  color: white;
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.main-div-signin .signUp a {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  border: 2px solid rgba(52, 152, 219, 0.8);
-  padding: 12px 25px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 25px;
-  background: rgba(52, 152, 219, 0.1);
-  backdrop-filter: blur(10px);
-  transform-style: preserve-3d;
-  transform: translateZ(10px);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+/* Divider */
+.divider {
   position: relative;
-  overflow: hidden;
+  text-align: center;
+  margin: 25px 0;
+  transform: translateZ(10px);
 }
 
-.main-div-signin .signUp a::before {
+.divider::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.2),
+    var(--neutral-white-rgba-3) 50%,
     transparent
   );
-  transition: left 0.5s ease;
 }
 
-.main-div-signin .signUp a:hover {
-  background: rgba(52, 152, 219, 0.3);
-  border-color: rgba(52, 152, 219, 1);
-  transform: translateY(-3px) translateZ(20px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 20px rgba(52, 152, 219, 0.3);
+.divider span {
+  background: var(--glass-bg);
+  padding: 0 15px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.main-div-signin .signUp a:hover::before {
-  left: 100%;
-}
-
-.main-div-signin .google {
-  margin-top: 30px;
+/* Google Sign In */
+.google-signin {
+  margin-bottom: 25px;
   transform: translateZ(10px);
 }
 
-.main-div-signin .google span {
-  color: white;
-  font-size: 1.3rem;
-  font-style: italic;
-  margin-bottom: 15px;
-  display: block;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.main-div-signin .google a {
+.google-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 25px;
-  padding: 15px 25px;
+  width: 100%;
+  padding: 14px 20px;
+  background: var(--glass-bg-2);
+  border: 2px solid var(--glass-border-2);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
   transform-style: preserve-3d;
   transform: translateZ(10px);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: var(--transition-medium);
+  box-shadow: 0 8px 25px var(--neutral-black-rgba),
+    inset 0 1px 0 var(--neutral-white-rgba-2);
   position: relative;
   overflow: hidden;
 }
 
-.main-div-signin .google a::before {
+.google-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -341,36 +331,61 @@ body::before {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.1),
+    var(--neutral-white-rgba) 50%,
     transparent
   );
   transition: left 0.5s ease;
 }
 
-.main-div-signin .google a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-3px) translateZ(20px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+.google-btn:hover {
+  background: var(--neutral-white-rgba-2);
+  border-color: var(--primary-blue);
+  transform: translateY(-3px) translateZ(20px) scale(1.02);
+  box-shadow: 0 15px 35px var(--neutral-black-rgba-2),
+    inset 0 1px 0 var(--neutral-white-rgba-3);
 }
 
-.main-div-signin .google a:hover::before {
+.google-btn:hover::before {
   left: 100%;
 }
 
-.main-div-signin .google a img {
-  height: 40px;
-  width: 40px;
-  margin-right: 15px;
+.google-btn img {
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
   border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--neutral-black-rgba-2);
+  transition: var(--transition-fast);
+  border: 1px solid var(--primary-blue-rgba);
 }
 
-.main-div-signin .google a:hover img {
+.google-btn:hover img {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px var(--neutral-black-rgba-3);
+  border-color: var(--primary-blue);
+}
+
+/* Sign Up Link */
+.signup-link {
+  transform: translateZ(10px);
+}
+
+.signup-link p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.signup-link a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.signup-link a:hover {
+  color: var(--accent-purple);
+  text-shadow: 0 0 10px var(--accent-purple-rgba);
 }
 
 /* Floating Animation */
@@ -389,34 +404,85 @@ body::before {
 }
 
 /* Neon Glow Effect */
-.neon-glow-signin {
-  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5), 0 0 20px rgba(52, 152, 219, 0.3),
-    0 0 30px rgba(52, 152, 219, 0.1);
+.signin-neon {
+  box-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue),
+    0 0 30px var(--neon-blue);
 }
 
-.neon-glow-signin:hover {
-  box-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 40px rgba(52, 152, 219, 0.5),
-    0 0 60px rgba(52, 152, 219, 0.3);
+.signin-neon:hover {
+  box-shadow: 0 0 15px var(--neon-blue-light), 0 0 30px var(--neon-blue),
+    0 0 45px var(--neon-blue);
 }
 
 /* Responsive Design */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .main-div-signin {
-    max-width: 90%;
-    padding: 30px 20px;
+    width: 95%;
+    padding: 35px 25px;
     transform: translateZ(0) rotateX(0deg);
   }
 
   .main-div-signin:hover {
-    transform: translateZ(15px) scale(1.01);
+    transform: translateZ(20px) scale(1.01);
   }
 
-  .main-div-signin h1 {
+  .app-logo {
     font-size: 2rem;
   }
 
-  .main-div-signin form input,
-  .main-div-signin form button {
-    height: 45px;
+  .main-div-signin h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-div-signin form input[type="email"],
+  .main-div-signin form input[type="password"] {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .main-div-signin form button.but {
+    padding: 14px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-div-signin {
+    width: 98%;
+    padding: 30px 20px;
+  }
+
+  .app-logo {
+    font-size: 1.8rem;
+  }
+
+  .main-div-signin h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-div-signin form {
+    gap: 15px;
+  }
+
+  .main-div-signin form input[type="email"],
+  .main-div-signin form input[type="password"] {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .main-div-signin form button.but {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .google-btn {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .google-btn img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
   }
 }
