@@ -1,65 +1,422 @@
+/* Modern 3D Sign-In Styles */
 body {
-  margin: 0; }
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(120, 119, 198, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 119, 198, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(120, 219, 255, 0.3) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: -1;
+}
 
 .main-div-signin {
-  max-width: 400px;
+  max-width: 450px;
+  width: 90%;
   margin: auto;
-  padding: 20px;
-  text-align: center; }
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform-style: preserve-3d;
+  transform: translateZ(0) rotateX(5deg);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-signin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.main-div-signin:hover {
+  transform: translateZ(30px) rotateX(0deg) scale(1.02);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-div-signin:hover::before {
+  transform: translateX(100%);
+}
+
+.main-div-signin h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.5);
+  transform: translateZ(20px);
+  transition: all 0.3s ease;
+}
+
+.main-div-signin h1:hover {
+  transform: translateZ(30px) scale(1.05);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.main-div-signin hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  margin-bottom: 30px;
+  transform: translateZ(10px);
+}
+
+.main-div-signin form {
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.main-div-signin form label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transform: translateZ(15px);
+  transition: all 0.3s ease;
+}
+
+.main-div-signin form label:hover {
+  transform: translateZ(20px) scale(1.02);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.main-div-signin form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  transform: translateZ(10px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-signin form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-div-signin form input::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main-div-signin form input:focus {
+  outline: none;
+  border-color: rgba(52, 152, 219, 0.8);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateZ(20px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 20px rgba(52, 152, 219, 0.3);
+}
+
+.main-div-signin form input:focus::before {
+  left: 100%;
+}
+
+.main-div-signin form button {
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: white;
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transform-style: preserve-3d;
+  transform: translateZ(15px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-signin form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main-div-signin form button:hover {
+  background: linear-gradient(145deg, #2980b9, #1f5f8b);
+  transform: translateY(-5px) translateZ(25px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-div-signin form button:hover::before {
+  left: 100%;
+}
+
+.main-div-signin form button:active {
+  transform: translateY(0px) translateZ(15px) scale(1.02);
+}
+
+.main-div-signin .signUp {
+  margin-top: 30px;
+  transform: translateZ(10px);
+}
+
+.main-div-signin .signUp p {
+  color: white;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-div-signin .signUp a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 2px solid rgba(52, 152, 219, 0.8);
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  background: rgba(52, 152, 219, 0.1);
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  transform: translateZ(10px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-signin .signUp a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main-div-signin .signUp a:hover {
+  background: rgba(52, 152, 219, 0.3);
+  border-color: rgba(52, 152, 219, 1);
+  transform: translateY(-3px) translateZ(20px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 20px rgba(52, 152, 219, 0.3);
+}
+
+.main-div-signin .signUp a:hover::before {
+  left: 100%;
+}
+
+.main-div-signin .google {
+  margin-top: 30px;
+  transform: translateZ(10px);
+}
+
+.main-div-signin .google span {
+  color: white;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  display: block;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-div-signin .google a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transform-style: preserve-3d;
+  transform: translateZ(10px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-div-signin .google a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.main-div-signin .google a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px) translateZ(20px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-div-signin .google a:hover::before {
+  left: 100%;
+}
+
+.main-div-signin .google a img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.main-div-signin .google a:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Animation */
+@keyframes signInFloat {
+  0%,
+  100% {
+    transform: translateY(0px) translateZ(0) rotateX(5deg);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(10px) rotateX(0deg);
+  }
+}
+
+.signin-float {
+  animation: signInFloat 4s ease-in-out infinite;
+}
+
+/* Neon Glow Effect */
+.neon-glow-signin {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5), 0 0 20px rgba(52, 152, 219, 0.3),
+    0 0 30px rgba(52, 152, 219, 0.1);
+}
+
+.neon-glow-signin:hover {
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.8), 0 0 40px rgba(52, 152, 219, 0.5),
+    0 0 60px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .main-div-signin {
+    max-width: 90%;
+    padding: 30px 20px;
+    transform: translateZ(0) rotateX(0deg);
+  }
+
+  .main-div-signin:hover {
+    transform: translateZ(15px) scale(1.01);
+  }
+
   .main-div-signin h1 {
-    color: #333;
-    margin-bottom: 20px; }
-  .main-div-signin hr {
-    border: 1px solid #ccc;
-    margin-bottom: 20px; }
-  .main-div-signin form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333; }
-  .main-div-signin form input {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 15px;
-    padding: 5px;
-    box-sizing: border-box; }
+    font-size: 2rem;
+  }
+
+  .main-div-signin form input,
   .main-div-signin form button {
-    background-color: #333;
-    color: white;
-    width: 100%;
-    height: 40px;
-    border: none;
-    cursor: pointer; }
-  .main-div-signin .signUp {
-    margin-top: 15px; }
-    .main-div-signin .signUp p {
-      color: #333;
-      font-size: 16px;
-      font-style: italic;
-      margin-bottom: 5px; }
-    .main-div-signin .signUp a {
-      color: #333;
-      font-size: 18px;
-      border: 2px solid #3498db;
-      padding: 5px 10px;
-      text-decoration: none;
-      display: inline-block; }
-      .main-div-signin .signUp a:hover {
-        background-color: #3498db;
-        color: white; }
-  .main-div-signin .google {
-    margin-top: 20px; }
-    .main-div-signin .google span {
-      color: #333;
-      font-size: 20px;
-      font-style: italic;
-      margin-bottom: 10px;
-      display: block; }
-    .main-div-signin .google a {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .main-div-signin .google a img {
-        height: 40px;
-        width: 40px;
-        margin-right: 10px;
-        border: 2px solid #3498db; }
+    height: 45px;
+  }
+}
