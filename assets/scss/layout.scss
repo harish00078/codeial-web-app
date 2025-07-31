@@ -1,49 +1,9 @@
-// body{
-//     margin: 0;
-//     /* text-align: center; */
+body{
+    margin: 0;
+    /* text-align: center; */
 
-//     #layout-main{
-//         height: 100%;
-//         overflow: auto;
-//     }
-// 
-
-#layout-main {
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(129, 207, 241);
-  
-    @media screen and (max-width: 600px) {
-      /* Styles for screens with a width of 600 pixels or less */
-      body {
-        background-color: rgb(34, 196, 250);
-      }
-  
-      /* Adjust #layout-main styles for smaller screens */
-      font-size: 14px;
+    #layout-main{
+        height: 100%;
+        overflow: auto;
     }
-  
-    @media screen and (min-width: 601px) and (max-width: 1200px) {
-      /* Styles for screens with a width between 601 and 1200 pixels */
-      body {
-        background-color: rgb(144, 227, 238);
-      }
-  
-      /* Adjust #layout-main styles for medium-sized screens */
-      font-size: 16px;
-    }
-  
-    // 3D Designs
-    .box {
-      width: 100px;
-      height: 100px;
-      background-color: #3498db;
-      transform-style: preserve-3d;
-      transform: rotateX(45deg) rotateY(45deg);
-      transition: transform 0.5s ease;
-  
-      &:hover {
-        transform: rotateX(0) rotateY(0);
-      }
-    }
-  }
+}

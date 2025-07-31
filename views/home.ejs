@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="<%= assetPath('css/home.css')%>">
-<link rel="stylesheet" href="<%= assetPath('css/chat_box.css')%>">
+<link rel="stylesheet" href="<%= assetPath('css/home.css') %>">
+<link rel="stylesheet" href="<%= assetPath('css/chat_box.css') %>">
 
 <div id="home-container">
     <section id="feed-posts">
@@ -25,7 +25,7 @@
         
         <section id="user-friends">
             <h4>Friends</h4>
-            <% for(u of all_users){%>
+            <% for(u of all_users){ %>
                 <p>
                     <a href="/users/profile/<%= u.id %>"><%= u.name %></a>
                 </p>
@@ -36,7 +36,7 @@
 </div>
 
 <!-- importing this script for creating the comments -->
-<script src="<%= assetPath('js/home_post_comments.js') %>"></script>
+<script src="<%= assetPath('js/home_post_comments.js') %>" ></script>
 <script src="<%= assetPath('js/home_posts.js') %>"></script>
 
 <!-- CHANGE :: import the script file for toggle likes, also run it over for the already present posts and comments on the page -->
