@@ -1,21 +1,111 @@
-<link rel="stylesheet" href="<%= assetPath('css/user_profile.css')%>">
+<link rel="stylesheet" href="<%= assetPath('css/user_profile.css')%>" />
 
-<img src="<%= user.avatar %>" alt="<%= user.name %>" width="100">
+<div class="user-profile-container">
+  <!-- Profile Header Section -->
+  <div class="profile-header">
+    <img
+      src="<%= user.avatar %>"
+      alt="<%= user.name %>"
+      class="profile-avatar"
+    />
+    <div class="profile-info">
+      <h1 class="profile-name"><%= user.name %></h1>
+      <p class="profile-email"><%= user.email %></p>
+    </div>
 
+    <!-- Profile Stats -->
+    <div class="profile-stats">
+      <div class="stat-item">
+        <span class="stat-number">25</span>
+        <span class="stat-label">Posts</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">150</span>
+        <span class="stat-label">Friends</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">1.2k</span>
+        <span class="stat-label">Likes</span>
+      </div>
+    </div>
+  </div>
 
+  <!-- Content Sections -->
+  <div class="content-sections">
+    <% if(user.id == profile_user.id){ %>
+    <!-- Profile Update Form -->
+    <div class="profile-form">
+      <h2 class="section-header">Update Profile</h2>
+      <form
+        action="/users/update/<%= profile_user.id %>"
+        enctype="multipart/form-data"
+        method="POST"
+      >
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="Your Name"
+            value="<%= profile_user.name %>"
+            required
+          />
+        </div>
 
-<% if(user.id == profile_user.id){ %>
-    <!-- if user matches then show the form -->
-    <form action="/users/update/<%= profile_user.id %>" enctype="multipart/form-data" method="POST">
-        <input type="text" name="name" placeholder="Your Name" value="<%= profile_user.name %>" required>
-        <input type="email" name="email" placeholder="Your Email" value="<%= profile_user.email %>" required>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            placeholder="Your Email"
+            value="<%= profile_user.email %>"
+            required
+          />
+        </div>
 
-        <input type="file" name="avatar" placeholder="Profile Picture">
-        <input type="submit"  value="Update">
-    </form>
-    
-<%}else{%>    
-    <!-- else show only the profile info -->
-    <p><%= profile_user.name %></p>
-    <p><%= profile_user.email %></p>
-<%} %>
+        <div class="form-group">
+          <label class="form-label">Profile Picture</label>
+          <div class="file-input-container">
+            <input
+              type="file"
+              name="avatar"
+              class="file-input"
+              id="avatar-input"
+            />
+            <label for="avatar-input" class="file-input-label"
+              >Choose File</label
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Update Profile</button>
+      </form>
+    </div>
+    <% } else { %>
+    <!-- Profile Display -->
+    <div class="profile-card">
+      <h2 class="section-header">Profile Information</h2>
+      <p><strong>Name:</strong> <%= profile_user.name %></p>
+      <p><strong>Email:</strong> <%= profile_user.email %></p>
+    </div>
+    <% } %>
+
+    <!-- Posts Section -->
+    <div class="posts-section">
+      <h2 class="section-header">Recent Posts</h2>
+      <div class="profile-card">
+        <p>No posts yet. Start sharing your thoughts!</p>
+      </div>
+    </div>
+
+    <!-- Friends Section -->
+    <div class="friends-section">
+      <h2 class="section-header">Friends</h2>
+      <div class="profile-card">
+        <p>No friends yet. Connect with others!</p>
+      </div>
+    </div>
+  </div>
+</div>

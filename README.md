@@ -79,7 +79,8 @@ EMAIL_PASS=your_email_password
 
 | Home Page | Real-Time Chat | Profile Page |  
 |-----------|---------------|--------------|  
-| ![Home](https://i.postimg.cc/d0Npvq89/Screenshot-2025-07-31-at-11-57-53-AM.png) | ![Chat](https://via.placeholder.com/400x250?text=Chat+Page) | ![Profile](https://via.placeholder.com/400x250?text=Profile+Page) |
+| ![Home](https://i.postimg.cc/d0Npvq89/Screenshot-2025-07-31-at-11-57-53-AM.png) | ![Chat](https://i.postimg.cc/d3GTwVTk/Screenshot-2025-07-31-at-12-07-28-PM.png) | ![Profile](https://via.placeholder.com/400x250?text=Profile+Page) |
+
 
 
 🔄 Quick Start Diagram

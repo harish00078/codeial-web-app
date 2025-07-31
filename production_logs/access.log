@@ -1972,3 +1972,16 @@
 [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 583.025 ms - 187[0m
 [0mGET / [32m200[0m 1613.522 ms - 10470[0m
 [0mGET /.well-known/appspecific/com.chrome.devtools.json [33m404[0m 580.003 ms - 187[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 963.063 ms - 2330[0m
+[0mGET /users/sign-out [36m302[0m 568.696 ms - 46[0m
+[0mGET / [32m200[0m 1141.899 ms - 7258[0m
+[0mGET /users/sign-up [32m200[0m 275.409 ms - 6542[0m
+[0mGET /users/sign-in [36m304[0m 291.983 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 278.974 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 285.730 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 354.687 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AVMBsJjrmG9sj9MUVHSUe066bVMWgmRRV_3OsdEDxJ74hF9dZl52RPf570Alqy84LSDajw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 1233.753 ms - 46[0m
+[0mGET / [32m200[0m 1122.559 ms - 7041[0m
+[0mGET / [32m200[0m 1537.424 ms - 10689[0m
+[0mGET /users/profile/64bfe90428141f8d7a681075 [32m200[0m 898.508 ms - 4545[0m
+[0mGET /users/profile [33m404[0m 561.139 ms - 152[0m
