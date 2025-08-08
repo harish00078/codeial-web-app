@@ -1,0 +1,56 @@
+// Design tokens
+$font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+
+// Colors
+$color-primary: #4f46e5; // indigo-600
+$color-primary-700: #4338ca; // indigo-700
+$color-primary-50: #eef2ff; // indigo-50
+$color-accent: #06b6d4; // cyan-500
+
+$color-bg: #f8fafc; // slate-50
+$color-surface: #ffffff;
+$color-text: #111827; // gray-900
+$color-text-muted: #6b7280; // gray-500
+$color-border: #e5e7eb; // gray-200
+$color-border-strong: #d1d5db; // gray-300
+$color-success: #16a34a; // green-600
+$color-warning: #d97706; // amber-600
+$color-error: #dc2626;   // red-600
+
+// Gradients
+$gradient-primary: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+$gradient-accent: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+
+// Spacing scale
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 28px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+
+// Radius
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 14px;
+$radius-full: 9999px;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+$shadow-md: 0 6px 16px rgba(0,0,0,0.10);
+$shadow-lg: 0 12px 28px rgba(0,0,0,0.14);
+$shadow-xl: 0 18px 40px rgba(0,0,0,0.18);
+$shadow-xxl: 0 28px 70px rgba(0,0,0,0.22);
+
+// Layout
+$container-max: 1100px;
+
+// Breakpoints
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

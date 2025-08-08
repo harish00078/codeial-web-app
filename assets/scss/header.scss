@@ -1,35 +1,42 @@
-#layout-header{
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        background: #2196f3;
-        color: white;
-        box-shadow: 1px 1px 1px 1px lightgrey;
+@import './variables';
+@import './mixins';
 
-        .mini-logo{
-            p{
-                margin: 5px;
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-        }
+#layout-header {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: $shadow-md;
 
-        .auth-links{
-            ul{
-                margin: 5% 5px;
-                display: flex;
-                list-style: none;
-                li{
-                    margin-right: 10px;
-                }
-            }
-        }
+  nav {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $space-3;
+    padding-bottom: $space-3;
 
-        a{
-            color: white;
-            text-decoration: none;
-        }
-
+    .mini-logo {
+      p {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        a { color: $color-primary; text-decoration: none; }
+      }
     }
+
+    .auth-links {
+      ul {
+        margin: 0;
+        display: flex;
+        list-style: none;
+        gap: $space-4;
+        padding: 0;
+        li { margin: 0; }
+      }
+      a { color: $color-text; text-decoration: none; font-weight: 600; transition: transform .12s ease, color .15s ease; display: inline-block; }
+      a:hover { color: $color-primary; transform: translateY(-1px); }
+    }
+  }
 }

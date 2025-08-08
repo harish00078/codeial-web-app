@@ -1,3 +1,66 @@
-body{
-    background-color: lightblue;
+@import './variables';
+@import './mixins';
+
+.profile-card {
+  @include card-3d;
+  padding: $space-6;
+  display: grid;
+  gap: $space-4;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: $space-4;
+
+  img {
+    width: 96px;
+    height: 96px;
+    border-radius: $radius-full;
+    object-fit: cover;
+    border: 2px solid $color-border;
+  }
+}
+
+.profile-form {
+  display: grid;
+  gap: $space-3;
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    @include input;
+  }
+  input[type="submit"] {
+    @include primary-button;
+    width: fit-content;
+  }
+}
+
+// Style current markup used by views/user_profile.ejs without extra classes
+main#layout-main > img[alt] {
+  width: 96px;
+  height: 96px;
+  border-radius: $radius-full;
+  object-fit: cover;
+  border: 2px solid $color-border;
+  display: block;
+  margin-bottom: $space-4;
+}
+
+main#layout-main form[action^="/users/update/"] {
+  @include card;
+  padding: $space-6;
+  display: grid;
+  gap: $space-3;
+}
+
+main#layout-main form[action^="/users/update/"] input[type="text"],
+main#layout-main form[action^="/users/update/"] input[type="email"],
+main#layout-main form[action^="/users/update/"] input[type="file"] {
+  @include input;
+}
+
+main#layout-main form[action^="/users/update/"] input[type="submit"] {
+  @include primary-button;
+  width: fit-content;
 }

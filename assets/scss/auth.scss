@@ -1,0 +1,26 @@
+@import './variables';
+@import './mixins';
+
+.auth-container {
+  display: grid;
+  place-items: center;
+}
+
+.auth-card { @include card-3d; padding: $space-8; width: 100%; max-width: 420px; }
+
+.auth-title { margin: 0 0 $space-4 0; }
+
+.auth-form { display: grid; gap: $space-4; }
+.form-group { display: grid; gap: $space-2; }
+.form-label { font-weight: 600; color: $color-text; }
+.form-input { @include input; }
+
+.auth-button { @include primary-button; width: 100%; }
+
+.signup-link { color: $color-text-muted; margin-top: $space-4; }
+.signup-button { @include primary-button; width: 100%; margin-top: $space-2; background: $color-accent; }
+.signup-button:hover { background: darken($color-accent, 6%); }
+
+.google-auth { margin-top: $space-6; display: grid; gap: $space-3; }
+.google-button { @include primary-button; width: 100%; background: linear-gradient(135deg, #ea4335, #fbbc05); }
+.google-icon { width: 20px; height: 20px; border-radius: 2px; background: white; color: #ea4335; display: grid; place-items: center; font-weight: 700; }

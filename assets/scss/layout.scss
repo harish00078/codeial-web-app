@@ -1,9 +1,25 @@
-body{
-    margin: 0;
-    /* text-align: center; */
+@import './variables';
+@import './mixins';
 
-    #layout-main{
-        height: 100%;
-        overflow: auto;
-    }
+html, body {
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  color: $color-text;
+  background: radial-gradient(1200px 800px at 20% -10%, rgba(79,70,229,0.08), transparent 50%),
+              radial-gradient(1000px 700px at 110% 10%, rgba(6,182,212,0.08), transparent 50%),
+              $color-bg;
+}
+
+#layout-main {
+  min-height: calc(100vh - 120px);
+  @include container;
+  padding-top: $space-6;
+  padding-bottom: $space-10;
+}
+
+// Center auth pages visually using existing markup
+.auth-container { min-height: calc(100vh - 120px); display: grid; place-items: center; }

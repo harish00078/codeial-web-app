@@ -1,0 +1,73 @@
+@mixin focus-ring($color: rgba(79,70,229,0.4)) {
+  outline: none;
+  box-shadow: 0 0 0 4px $color;
+}
+
+@mixin button-reset {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+@mixin container {
+  max-width: $container-max;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $space-4;
+  padding-right: $space-4;
+}
+
+@mixin card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+}
+
+@mixin input {
+  width: 100%;
+  padding: $space-3 $space-4;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  color: $color-text;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  &:focus { border-color: $color-primary; @include focus-ring(rgba(79,70,229,0.25)); }
+}
+
+@mixin primary-button {
+  @include button-reset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-2;
+  padding: $space-3 $space-5;
+  background: $gradient-primary;
+  color: white;
+  border-radius: $radius-md;
+  box-shadow: $shadow-md, inset 0 -2px 0 rgba(0,0,0,0.06);
+  cursor: pointer;
+  transform: translateZ(0);
+  transition: transform .12s ease, filter .18s ease, box-shadow .2s ease;
+  &:hover { filter: brightness(1.03); box-shadow: $shadow-lg, inset 0 -2px 0 rgba(0,0,0,0.06); }
+  &:active { transform: translateY(1px) scale(0.99); box-shadow: $shadow-sm; }
+}
+
+@mixin card-3d {
+  @include card;
+  box-shadow: $shadow-lg;
+  transition: transform .18s ease, box-shadow .2s ease;
+  transform: translateZ(0);
+  will-change: transform, box-shadow;
+  &:hover { transform: translateY(-3px); box-shadow: $shadow-xl; }
+}
+
+@mixin glassy($bg: rgba(255,255,255,0.65)) {
+  background: $bg;
+  backdrop-filter: saturate(160%) blur(16px);
+  -webkit-backdrop-filter: saturate(160%) blur(16px);
+}
