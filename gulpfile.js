@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 
-const sass = require('gulp-sass');
+const dartSass = require('sass');
+const sass = require('gulp-sass')(dartSass);
 const cssnano = require('gulp-cssnano');
 const rev = require('gulp-rev');
 const uglify = require('gulp-uglify-es').default;
@@ -11,10 +12,10 @@ const del = require('del');
 
 gulp.task('css', function(done){
     console.log('minifying css...');
-    gulp.src('./assets/sass/**/*.scss')
+    gulp.src('./assets/scss/**/*.scss')
     .pipe(sass())
     .pipe(cssnano())
-    .pipe(gulp.dest('./assets.css'));
+    .pipe(gulp.dest('./assets/css'));
 
      gulp.src('./assets/**/*.css')
     .pipe(rev())

@@ -117,8 +117,13 @@ const passportGoogle = require('./config/passport-google-oauth2-strategy');
 
 const MongoStore = require('connect-mongo')(session);
 
-// FIX: Properly import sassMiddleware
-const sassMiddleware = require('node-sass-middleware');
+// Lazily require sass middleware; skip if bindings unavailable
+let sassMiddleware = null;
+try {
+    sassMiddleware = require('node-sass-middleware');
+} catch (err) {
+    console.warn('node-sass-middleware unavailable, skipping SCSS middleware:', err.message);
+}
 
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
@@ -130,17 +135,17 @@ chatServer.listen(5001);
 console.log('chat server is listening on port 5001');
 const path = require('path');
 
-// FIX: Improved SCSS middleware configuration
-if (env.name == 'development'){
+// Enable SCSS middleware only in dev and when available
+if (env.name === 'development' && sassMiddleware) {
     app.use(sassMiddleware({
         src: path.join(__dirname, env.asset_path, 'scss'),
         dest: path.join(__dirname, env.asset_path, 'css'),
         debug: true,
-        outputStyle: 'expanded', // Fixed: was 'extended' which is invalid
+        outputStyle: 'expanded',
         prefix: '/css',
         indentedSyntax: false,
         sourceMap: true,
-        force: true // Force recompile on every request during development
+        force: true
     }));
 }
 

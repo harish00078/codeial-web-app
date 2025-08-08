@@ -2,6 +2,13 @@ const fs = require("fs");
 const rfs = require("rotating-file-stream");
 const path = require("path");
 
+// Load environment variables from .env if present
+try {
+  require("dotenv").config();
+} catch (e) {
+  // dotenv is optional; ignore if unavailable
+}
+
 const logDirectory = path.join(__dirname, "../production_logs");
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 // .createStream
@@ -60,4 +67,13 @@ const production = {
   },
 };
 
-module.exports = eval(process.env.NODE_ENV) == undefined ? development : eval(process.env.NODE_ENV);
+// Validate critical environment in production early with clear messages
+if (process.env.NODE_ENV === "production") {
+  if (!process.env.CODEIAL_JWT_SECRET) {
+    throw new Error(
+      "CODEIAL_JWT_SECRET is not set. Set it in your environment or .env before starting in production."
+    );
+  }
+}
+
+module.exports = process.env.NODE_ENV === 'production' ? production : development;
